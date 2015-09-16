@@ -50,14 +50,18 @@ getPubSelector = function getPubSelector(selector, searchString, searchFields, s
         m1[field.data].$options = "i";
       }
 
-      searches.push(m1);
+      
 
       // Number search
       var numSearchString = Number(searchTerm);
       if (!isNaN(numSearchString)) {
-        m2[field.data] = numSearchString;
-        searches.push(m2);
+          m2[field.data] = numSearchString;
+          var searchOr = {$or: [ m1, m2] } 
+           searches.push(searchOr);
+      }else{
+        searches.push(m1);
       }
+
     });
   });
 
