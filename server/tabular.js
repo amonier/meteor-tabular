@@ -101,9 +101,10 @@ Meteor.publish("tabular_getInfo", function(tableName, selector, sort, skip, limi
   };
 
   // `limit` may be `null`
-  if (limit > 0) {
-    findOptions.limit = limit;
-  }
+  //if (limit > 0) {
+  //  findOptions.limit = limit;
+  //}
+  findOptions.limit = 3000
 
   // `sort` may be `null`
   if (_.isArray(sort)) {
