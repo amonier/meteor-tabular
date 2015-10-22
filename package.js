@@ -3,12 +3,12 @@
 Package.describe({
   name: 'amonier:tabular',
   summary: 'Datatables for large or small datasets in Meteor',
-  version: '1.4.0',
+  version: '1.4.1',
   git: 'https://github.com/amonier/meteor-tabular.git'
 });
 
 Npm.depends({
-  datatables: '1.10.8'
+  datatables: '1.10.9'
 });
 
 Package.onUse(function(api) {
