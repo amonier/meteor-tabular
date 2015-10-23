@@ -30,6 +30,10 @@ Package.onUse(function(api) {
     '.npm/package/node_modules/datatables/media/js/jquery.dataTables.js',
     'client/lib/dataTables.bootstrap.js',
     'client/lib/dataTables.bootstrap.css',
+    'client/lib/datatables.js',
+    'client/lib/datatables.css',
+    'client/lib/flashExport.swf',
+
     'client/tabular.html',
     'client/util.js',
     'client/tableRecords.js',
